@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>mycheckbox</title>
+    <style>
+        .toggle{}
+        .toggle input{display: none;}
+        .toggle input:checked+.rectangle .circle{
+            margin-left: 20px;
+        }
+        .toggle input:checked+.rectangle{
+            background: #0f0;
+        }
+        .toggle .rectangle{
+            width: 50px;
+            height: 30px;
+            border: 1px solid #CCCCCC;
+            border-radius: 15px;
+        }
+        .toggle .rectangle .circle{
+            width: 30px;
+            height: 30px;
+            border: 1px solid #CCCCCC;
+            box-sizing: border-box;
+            border-radius: 15px;
+            background: #FFFFFF;
+            transition: margin-left 0.5s;
+        }
+    </style>
+</head>
+<body>
+<label class="toggle">
+    <input type="checkbox"/>
+    <div class="rectangle">
+        <div class="circle"></div>
+    </div>
+</label>
+</body>
+</html>
